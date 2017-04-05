@@ -88,7 +88,7 @@ public class Main {
             parentFile.mkdirs();
         }
         PrintWriter writer = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file), StandardCharsets.UTF_8));
-        writer.println(sb.toString());
+        writer.print(sb.toString());
         writer.flush();
         writer.close();
     }
